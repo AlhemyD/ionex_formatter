@@ -111,8 +111,8 @@ class IonexMap():
                 raise LongitudeCellIsNotSet(lons, lat)
             if self.lon_range.vmin < self.lon_range.vmax:
                 _data[lat].sort(key=lambda x: x[0], reverse=False)
-            else:
-                _data[lat].sort(key=lambda x: x[0], reverse=True)
+         #   else:
+        #        _data[lat].sort(key=lambda x: x[0], reverse=True)
             self.data[lat] = [val for _, val in _data[lat]]
 
             
